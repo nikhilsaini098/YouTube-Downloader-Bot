@@ -1,5 +1,4 @@
-Welcome Dosto....
-NON-DRM bot made by @nikhil.saini.khe (TELEGRAM & Instagram)
+Welcome to YouTube Downloader Bot made by @nikhil.saini.khe (TELEGRAM & Instagram)
 
 #command
 ```
