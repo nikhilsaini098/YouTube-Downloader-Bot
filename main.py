@@ -65,7 +65,7 @@ image_urls = [
 @bot.on_message(filters.command(["help"]))
 async def txt_handler(client: Client, m: Message):
     await bot.send_message(m.chat.id, text= (
-        "<pre><code> 🎉Congrats! You are using 𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎:</code></pre>\n┣\n"
+        "<pre><code>Congrats! You are using 𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎:</code></pre>\n┣\n"
         "┣⪼01. Send /start - To Check Bot \n┣\n"
         "┣⪼02. Send /logs - To see Bot Working Logs\n┣\n"
         "┣⪼03. Send /cookies - To update YT cookies.\n┣\n"
@@ -112,22 +112,12 @@ async def cookies_handler(client: Client, m: Message):
 # Start command handler
 @bot.on_message(filters.command(["start"]))
 async def start_command(bot: Client, message: Message):
-    # Send a loading message
-    loading_message = await bot.send_message(
-        chat_id=message.chat.id,
-        text="Loading... ⏳🔄"
-    )
-  
-    # Choose a random image URL
     random_image_url = random.choice(image_urls)
-    
-    # Caption for the image
     caption = (
-        "<pre><code>🌟 Welcome Boss😸! 🌟</code></pre>\n\n"
-        "➽ I am Powerful YouTube Uploader Bot 📥\n\n➽ 𝐔𝐬𝐞 /help for use this Bot.\n\n<pre><code> 𝐌𝐚𝐝𝐞 𝐁𝐲 : 𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎 🦁</code></pre>"
+        "🌟 Welcome {0}! 🌟\n\n"
+        "➽ I am Powerful YouTube Uploader Bot 📥\n\n➽ 𝐔𝐬𝐞 /help for use this Bot.\n\n𝐌𝐚𝐝𝐞 𝐁𝐲 : 𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎 🦁"
     )
-
-    await loading_message.delete()
+    
     await bot.send_photo(
         chat_id=message.chat.id,
         photo=random_image_url,
