@@ -114,8 +114,7 @@ async def cookies_handler(client: Client, m: Message):
 async def start_command(bot: Client, message: Message):
     random_image_url = random.choice(image_urls)
     caption = (
-        "🌟 Welcome {0}! 🌟\n\n"
-        "➽ I am Powerful YouTube Uploader Bot 📥\n\n➽ 𝐔𝐬𝐞 /help for use this Bot.\n\n𝐌𝐚𝐝𝐞 𝐁𝐲 : 𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎 🦁"
+        f"🌟 Welcome {0}! 🌟\n\n➽ I am Powerful YouTube Uploader Bot 📥\n\n➽ 𝐔𝐬𝐞 /help for use this Bot.\n\n𝐌𝐚𝐝𝐞 𝐁𝐲 : 𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎 🦁"
     )
     
     await bot.send_photo(
