@@ -257,8 +257,8 @@ async def text_handler(bot: Client, m: Message):
                 await m.reply_text(Error)
                 pass
 
-    except Exception as e:
-        await m.reply_text(e)   
+        except Exception as e:
+            await m.reply_text(e)   
                      
 bot.run()
 if __name__ == "__main__":
