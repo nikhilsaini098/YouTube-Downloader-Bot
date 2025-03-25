@@ -124,7 +124,7 @@ async def start_command(bot: Client, message: Message):
     # Caption for the image
     caption = (
         "<pre><code>🌟 Welcome Boss😸! 🌟</code></pre>\n\n"
-        "➽ I am Powerful DRM Uploader Bot 📥\n\n➽ 𝐔𝐬𝐞 /drm for use this Bot.\n\n<pre><code> 𝐌𝐚𝐝𝐞 𝐁𝐲 : 𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎 🦁</code></pre>"
+        "➽ I am Powerful YouTube Uploader Bot 📥\n\n➽ 𝐔𝐬𝐞 /help for use this Bot.\n\n<pre><code> 𝐌𝐚𝐝𝐞 𝐁𝐲 : 𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎 🦁</code></pre>"
     )
 
     await loading_message.delete()
